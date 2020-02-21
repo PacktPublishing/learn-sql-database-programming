@@ -1,3 +1,5 @@
+/*doesn't work in sql server, postgres, or oracle - see the earlier chapters for explanations*/ 
+
 #create index to use 
 USE lahmansbaseballdb; 
 ALTER TABLE appearances

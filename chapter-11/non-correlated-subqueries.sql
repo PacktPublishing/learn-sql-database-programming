@@ -44,9 +44,9 @@ ORDER BY playerid, yearid;
 #using in select clause 
 USE lahmansbaseballdb; 
 SELECT playerid, yearid, salary,
-    (SELECT ROUND(AVG(salary), 0)
+    (SELECT ROUND(AVG(salary), 0) /* use ROUND(AVG(salary)) in PostgreSQL */
   FROM salaries) AS average_salary,
-    salary - (SELECT ROUND(AVG(salary), 0)
+    salary - (SELECT ROUND(AVG(salary), 0) /* use ROUND(AVG(salary)) in PostgreSQL */
               FROM salaries) AS difference, 
   (SELECT MAX(salary)
   FROM salaries) AS max_salary
@@ -55,25 +55,25 @@ ORDER BY playerid, yearid;
 
 #using in from clause 
 USE lahmansbaseballdb; 
-SELECT ROUND(AVG(average_salary), 0) AS average_of_all_teams_salaries
+SELECT ROUND(AVG(average_salary), 0) AS average_of_all_teams_salaries  /* use ROUND(AVG(salary)) in PostgreSQL */
 FROM
- (SELECT AVG(salary) average_salary
- FROM salaries
- GROUP BY teamid) AS team_salary;
+ (SELECT AVG(salary) average_salary 
+  FROM salaries 
+  GROUP BY teamid) AS team_salary; /* remove AS in Oracle */ 
  
- USE lahmansbaseballdb;
- SELECT ROUND(AVG(average_salary), 0) AS average_of_all_teams_salaries
+USE lahmansbaseballdb;
+SELECT ROUND(AVG(average_salary), 0) AS average_of_all_teams_salaries  /* use ROUND(AVG(salary)) in PostgreSQL */
 FROM
  (SELECT AVG(salary) average_salary
  FROM salaries
- GROUP BY teamid) AS team_salary
-WHERE team_salary.average_salary > 2000000;
+ GROUP BY teamid) AS team_salary /* remove AS in Oracle */
+WHERE team_salary.average_salary > 2000000; 
 
 #using in insert update and delete 
 USE lahmansbaseballdb;
  CREATE TABLE salaries_avg (
  teamID varchar(3) NOT NULL,
- salaryavg double NOT NULL
+ salaryavg double NOT NULL  /* use float type in sql server and use real type in postgresql */
  );
  
  USE lahmansbaseballdb; 
@@ -94,7 +94,7 @@ SET
                  FROM salaries
                  GROUP BY teamid) AS team_salary
              WHERE team_salary.average_salary > 2000000
-             LIMIT 1); 
+             LIMIT 1);   /* use TOP in sql server instead of LIMIT */
              
              
 USE lahmansbaseballdb; 
