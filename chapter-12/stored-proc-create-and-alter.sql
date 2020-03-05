@@ -35,7 +35,6 @@ SELECT p.playerid, birthyear, a.yearid,
           G_defense, H;
          
 
-
 /*call stored proc in sql server */
 EXEC getplayergameinfo; 
 
