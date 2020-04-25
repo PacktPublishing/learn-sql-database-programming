@@ -50,6 +50,11 @@ ALTER TABLE tableforaltering
 DROP COLUMN atbats, 
 DROP COLUMN hits;
 
+#drop column 
+USE yourschema;
+ALTER TABLE managers
+DROP COLUMN teamid; 
+
 #drop column with foreign key 
 USE yourschema;
 ALTER TABLE managers
@@ -57,10 +62,11 @@ DROP FOREIGN KEY FK_teamid;
 ALTER TABLE managers
 DROP COLUMN teamid;
 
+
 #rename column 
 USE foraltering;
 ALTER TABLE tableforaltering
-CHANGE COLUMN atbats numberofatbats SMALLINT(4);
+CHANGE COLUMN atbats numberofatbats SMALLINT;
 
 #change data type of column 
 USE foraltering;
@@ -79,14 +85,14 @@ CHANGE COLUMN schoolID schoolID INT;
 
 USE foraltering;
 ALTER TABLE tableforaltering
-CHANGE COLUMN yearID yearID SMALLINT(4);
+CHANGE COLUMN yearID yearID SMALLINT;
 
 #add or change column constraint 
 #add not null constraint 
 USE foraltering;
 ALTER TABLE tableforaltering
 CHANGE COLUMN schoolID schoolID VARCHAR(8) NOT NULL,
-CHANGE COLUMN yearID yearID SMALLINT(4) NOT NULL;
+CHANGE COLUMN yearID yearID SMALLINT NOT NULL;
 
 #add check constraint 
 USE foraltering;
@@ -119,8 +125,6 @@ DROP CONSTRAINT check_yearid;
 #drop a table 
 USE foraltering
 DROP TABLE tableforaltering;
-
-
 
 
 
