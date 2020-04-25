@@ -5,7 +5,7 @@ USE foraltering;
 CREATE TABLE tableforaltering (
  playerID varchar(9) NOT NULL,
  schoolID varchar(15) NULL,
- yearID smallint(6) NULL
+ yearID smallint NULL
 );
 
 #insert data into the table above 
@@ -27,15 +27,15 @@ VALUES ('aardsda01','pennst',2001),
 #add a column 
 USE foraltering; 
 ALTER TABLE tableforaltering
-ADD COLUMN atbats SMALLINT(4) NULL AFTER yearID;
+ADD COLUMN atbats SMALLINT NULL AFTER yearID;
 
 ALTER TABLE tableforaltering
-ADD COLUMN hits SMALLINT(4) NULL AFTER atbats;
+ADD COLUMN hits SMALLINT NULL AFTER atbats;
 
 USE foraltering; 
 ALTER TABLE tableforaltering
-ADD COLUMN atbats SMALLINT(4) NULL AFTER yearID, 
-ADD COLUMN hits SMALLINT(4) NULL AFTER atbats;
+ADD COLUMN atbats SMALLINT NULL AFTER yearID, 
+ADD COLUMN hits SMALLINT NULL AFTER atbats;
 
 #drop a column 
 USE foraltering; 

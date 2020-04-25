@@ -12,6 +12,7 @@ ROLLBACK;
 
 #run multiple queries in the transaction 
 USE lahmansbaseballdb;
+CREATE TABLE awards LIKE awardsmanagers; 
 START TRANSACTION; 
 INSERT INTO awards 
 SELECT * FROM awardsmanagers
