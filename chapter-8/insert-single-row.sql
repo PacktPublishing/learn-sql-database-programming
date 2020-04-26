@@ -24,7 +24,7 @@ INSERT INTO collegeplaying
 (playerID, yearID)
 VALUES ('blaloha01', 1999);
 
-#the following query causes an error except in postgresql
+#the following query causes an error
 USE lahmansbaseballdb;
 INSERT INTO collegeplaying
 VALUES ('blaloha01', 1999);

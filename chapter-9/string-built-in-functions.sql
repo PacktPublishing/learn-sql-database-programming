@@ -1,8 +1,7 @@
 USE lahmansbaseballdb;
 SELECT UPPER(playerid) as playeridupper,
        playerid, 
-       LOWER(CONCAT(teamid, " ", lgid)) 
-           as teamleague, 
+       LOWER(CONCAT(teamid, ' ', lgid)) as teamleague, 
        teamid, 
        lgid,
        LOWER(gameid) as gameidlower,
