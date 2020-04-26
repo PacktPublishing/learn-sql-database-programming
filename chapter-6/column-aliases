@@ -1,0 +1,4 @@
+#column alias
+SELECT playerid, 
+	   G_defense AS GamesPlayingDefense
+FROM lahmansbaseballdb.appearances; 
