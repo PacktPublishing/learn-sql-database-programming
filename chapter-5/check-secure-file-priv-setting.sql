@@ -1,1 +1,1 @@
-select @@secure_file_priv
+select @@secure_file_priv; 

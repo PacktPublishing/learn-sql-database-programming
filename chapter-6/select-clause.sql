@@ -1,3 +1,32 @@
+#select all columns from table 
+SELECT * FROM lahmansbaseballdb.appearances;
+
+#select single column from table 
+SELECT playerid FROM lahmansbaseballdb.appearances;
+
+#select multiple columns from table 
+SELECT playerid, g_all, g_batting, g_defense FROM lahmansbaseballdb.appearances;
+
+#select one column that is distinct 
+USE lahmansbaseballdb;
+SELECT distinct playerid FROM appearances;
+
+#select multiple columns that are distinct 
+USE lahmansbaseballdb;
+SELECT DISTINCT teamid, playerid from appearances;
+
+#column alias
+SELECT playerid, 
+	   G_defense AS GamesPlayingDefense
+FROM lahmansbaseballdb.appearances; 
+
+#column alias with space 
+SELECT playerid, 
+	   G_defense AS 'Games Playing Defense'
+FROM lahmansbaseballdb.appearances; 
+
+
+#limit and offset
 USE lahmansbaseballdb;
 SELECT playerid, g_all, g_batting, g_defense FROM appearances
 LIMIT 500;

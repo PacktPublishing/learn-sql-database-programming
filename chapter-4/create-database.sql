@@ -1,1 +1,1 @@
-CREATE DATABASE yourschema
+CREATE DATABASE yourschema;
