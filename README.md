@@ -1,6 +1,6 @@
 # Learn SQL Database Programming
 
-<a href="https://www.packtpub.com/in/data/learn-sql-database-programming?utm_source=github&utm_medium=repository&utm_campaign=9781838984762"><img src="Cover Image URL of the Book" alt="Learn SQL Database Programming" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/in/data/learn-sql-database-programming?utm_source=github&utm_medium=repository&utm_campaign=9781838984762"><img src="https://www.packtpub.com/media/catalog/product/9781838984762-original.png" alt="Learn SQL Database Programming" height="256px" align="right"></a>
 
 This is the code repository for [Learn SQL Database Programming](https://www.packtpub.com/in/data/learn-sql-database-programming?utm_source=github&utm_medium=repository&utm_campaign=9781838984762), published by Packt.
 
