@@ -4,7 +4,7 @@
 
 This is the code repository for [Learn SQL Database Programming](https://www.packtpub.com/in/data/learn-sql-database-programming?utm_source=github&utm_medium=repository&utm_campaign=9781838984762), published by Packt.
 
-**Query and manipulate databases from popular relational database servers using SQL	**
+**Query and manipulate databases from popular relational database servers using SQL**
 
 ## What is this book about?
 SQL is a powerful querying language that's used to store, manipulate, and retrieve data, and it is one of the most popular languages used by developers to query and analyze data efficiently. If you're looking for a comprehensive introduction to SQL, Learn SQL Database Programming will help you to get up to speed with using SQL to streamline your work in no time. Starting with an overview of relational database management systems, this book will show you how to set up and use MySQL Workbench and design a database using practical examples. You'll also discover how to query and manipulate data with SQL programming using MySQL Workbench. As you advance, you’ll create a database, query single and multiple tables, and modify data using SQL querying. This SQL book covers advanced SQL techniques, including aggregate functions, flow control statements, error handling, and subqueries, and helps you process your data to present your findings. Finally, you’ll implement best practices for writing SQL and designing indexes and tables. By the end of this SQL programming book, you’ll have gained the confidence to use SQL queries to retrieve and manipulate data.
@@ -36,7 +36,6 @@ The code will look like the following:
 **Following is what you need for this book:**
 This book is for business analysts, SQL developers, database administrators, and students learning SQL. If you want to learn how to query and manipulate SQL data for database administration tasks or simply extract and organize relevant data for analysis, you’ll find this book useful. No prior SQL experience is required.	
 
-With the following software and hardware list you can run all code files present in the book (Chapter 1-15).
 
 ### Software and Hardware List
 
@@ -48,7 +47,7 @@ With the following software and hardware list you can run all code files present
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://static.packt-cdn.com/downloads/9781838984762_ColorImages.pdf).
 
 
-## Get to Know the Author(s)
+## Get to Know the Author
 **Josephine Bush**
 has over 10 years of experience as a Database Administrator. Her experience is extensive and broad-based, including in financial, businss, and energy data systems using MySQL, SQL Server, Oracle, and PostgreSQL. She is a Microsoft Certified Solutions Expert: Data Management and Analytics. She holds a BS in Information Technology, an MBA in IT Management, and an MS in Data Analytics.
 
