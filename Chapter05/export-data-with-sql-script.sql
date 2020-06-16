@@ -1,0 +1,4 @@
+SELECT * INTO OUTFILE 'results.txt'
+  FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+  LINES TERMINATED BY '\n'
+  FROM yourschema.teams;
